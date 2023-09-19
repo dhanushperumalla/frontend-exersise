@@ -48,6 +48,11 @@ let movies = [
         name:"CUSTODY",
         poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9PVFulp8bzbkmhUVQ_OKkqQi-xfZUtZ0Yyg&usqp=CAU",
         rating:9.8
+    },
+    {
+        name:"RRR",
+        poster:"https://i.etsystatic.com/20387760/r/il/f3a7ff/4445210431/il_fullxfull.4445210431_1rod.jpg",
+        rating:9.8
     }
 ];
 
