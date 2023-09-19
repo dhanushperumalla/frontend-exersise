@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movies-Adda</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXyw2NUSFWO6BKmQb5rrIl6gmmPpAuvIm_0Q&usqp=CAU"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          class="logo-img"
+          src="https://t3.ftcdn.net/jpg/05/90/75/40/360_F_590754013_CoFRYEcAmLREfB3k8vjzuyStsDbMAnqC.jpg"
+          alt="logo"
+        />
+      </div>
+      <div class="search">
+        <div class="search-bar">
+          <input
+            type="text"
+            onkeyup="searchMovie()"
+            id="search"
+            class="search-box"
+            placeholder="Search Movie"
+          />
+          <img
+            onclick="searchMovie()"
+            class="search-icon"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAMAAAC4XpwXAAAAaVBMVEX///8AAAC5ubm9vb319fXy8vKYmJjm5ubIyMjp6ek8PDz7+/tBQUH4+PiioqLW1tYwMDAYGBg3NzdISEhaWlpmZmZ5eXkTExOHh4fQ0NCBgYHc3NysrKyysrIlJSVzc3MeHh5SUlKPj48nBX2gAAAE10lEQVRoge1b2XbiMAyFkp2QhCyELYXw/x85CXNaLG+RbDHz0N5XbN9YlrWa1QqJoNxcj7em2vfr/l61h2hIYuxcP8TJMd+vVXy2xSl4L3U6tJ8a5i9kt1P4Nu5N11uo/6I+vuUMtoVO3jp0J27u4IGkfiJPWMmLO4V8QnNh4z41RO4ZRx792x0duCfUHOK/VG7kE87e5Fdn7gmV3+3bHnzI1+t+40GetuZ1s7G7HR/R43xrG8vhXN3JcwNzHiUXQaW3aflxMN3JyJE81C84Dql2eBnpXcDDiTzVkfeF7RqXNy56ndjrYrs068wi/K2qcH2EMV+XTqUnq566hxF7eQf1yEoauWpkCvzkUN3+jkIeKydO81nKx4+EybtamtySvn3CSaYnaJ7s1Toi94RStn/oo5c//EAnV30jWvZSMOGw8ye9FIIir13BQj7RSyJEBTsBvK4VVeFeSCD7ETNHil59AgRpKcTmt06nZQDUIIS7gafeepHLR7+c54GMZa935XjAvSyanA0YTjDueuyAn86XNg8cROafEsPdLIT40L0M3uSS4t3sY4Fz+mQgh5uv7JduZD31J/Cij4Gdc7dyIoDaWx0WEJOzgYcAqmQ9TODYP3jYV+DS2WIkMabZcxWArsgtBaKha5jIV6XIbrH1YByPxk8IMtyegNLxVZ6A/TQPE0/ozld3i0R28zUWVT7nue0zgEjNSi+moJ6eXQTw8mZrJ97MBYdAQSpGt+ZgSUz//QtOL3bRfpuvkviNrhUPDcIate4a9Y1kBDmZ3S+YhewNmZ1x7yFu76J2uJWa9OwVil3UDqfEVQ+kzouVIqbYYgaIL8wuVqzKsjlYqR5gdl6iO6j5ukuDyG52XmAYX28DVN/Mw0DC7VPchhiFVXvzMKAeqGQfg1S8cDZlFt0MSyYzA0jU5j5AcZbr4MGx25IZkHdw2VpRoNYwHdzMioccCD6zjQTBL5PoQcfALk8wlMXUB+KKC/VSWCT1rdrMAFWzBfMNgiCO2C4E21kK12B52j+jgAXDJU2ChRtvN0tdDnY1fHN42Fta7kpDvbv7+VnYIckRM8CV95N9DEv0GEHC+p5XZA3bO3fUHKk14Z7HS+1znA6VcBK1lfeNCC6DbcxIfchPN3svNVjQXiOV2kmVC71Mjs9OJMVb93R6SeykUojy3IIaYioLkL5feUZAijFjuZNKtJlyK28SHV71r+pTNKLs5KOfEOE6FfGoTiU7DFlnJ2SIHYSmx2hEet0y+cIatodwDPST/M3am2ifnHyD2OUxPC7LilLVgDQ5215cuuxeNhmvD+gemzJOwzAIwzQ+DedxkdqB3v7C7F5nTVYtv/R8gXjxZH/nC+Lud6MPl2o1qA1GzcXHIb/ojBY1Ti3Nr+xseDwvhj+9y/PG8cssMNCHuqdjFtwFhg/lV3pFyGi/NZDssb/qTQgiw0NHCZ2SsTAIf+ZPbkuPaxutG+Chnw4gORhtal9HpeHtoUrvXA28DEflDPo22thSPlX1vPLTXZlci2hGMZwQaT6L6rmD6+x/6R3AYfU88Kt6P5ee2epR8at6P5d+UOj/s9Xj6ES40zO+NnCgxxSw30j/b9klq2dpD78HYPeMb5sc6Hn/SkmkZ3zmgcdXk7Zb+gvUe5AWzbo/zGL/A68CNltLmW0HAAAAAElFTkSuQmCC"
+            alt="search-icon"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="movies" id="movies">
+      <!-- <div class="movie">
+        <div class="overlay">
+          <div class="vedio"></div>
+          <div class="details">
+            <h1>CUSTODY</h1>
+            <h1>IMDB: 7.6</h1>
+            <p>Naga Chaitanya,Samantha</p>
+          </div>
+        </div>
+        <img
+          class="poster"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9PVFulp8bzbkmhUVQ_OKkqQi-xfZUtZ0Yyg&usqp=CAU"
+          alt="poster"
+        />
+      </div> -->
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
